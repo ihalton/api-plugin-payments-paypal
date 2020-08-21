@@ -80,6 +80,6 @@ workflows:
           requires:
             - lint
             - test
-          filters:
-            branches:
-              only: trunk
+          # filters:
+          #   branches:
+          #     only: trunk
