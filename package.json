@@ -1,27 +1,27 @@
 {
-  "name": "@reactioncommerce/api-plugin-example",
-  "description": "Boilerplate Example plugin for the Reaction API",
+  "name": "@ihalton/api-plugin-payments-paypal",
+  "description": "Boilerplate Paypal plugin for the Reaction API",
   "version": "0.0.0-development",
   "main": "index.js",
   "type": "module",
   "engines": {
     "node": ">=12.14.1"
   },
-  "homepage": "https://github.com/reactioncommerce/api-plugin-example",
-  "url": "https://github.com/reactioncommerce/api-plugin-example",
-  "email": "engineering@reactioncommerce.com",
+  "homepage": "https://github.com/ihalton/api-plugin-payments-paypal",
+  "url": "https://github.com/ihalton/api-plugin-payments-paypal",
+  "email": "halton.xu@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reactioncommerce/api-plugin-example.git"
+    "url": "git+https://github.com/ihalton/api-plugin-payments-paypal.git"
   },
   "author": {
-    "name": "Reaction Commerce",
-    "email": "engineering@reactioncommerce.com",
+    "name": "Halton Xu",
+    "email": "halton.xu@gmail.com",
     "url": "https://reactioncommerce.com"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/reactioncommerce/api-plugin-example/issues"
+    "url": "https://github.com/ihalton/api-plugin-payments-paypal/issues"
   },
   "sideEffects": false,
   "dependencies": {
@@ -55,7 +55,7 @@
   "scripts": {
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint .",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "test:file": "jest --no-cache --watch --coverage=false"
   },
