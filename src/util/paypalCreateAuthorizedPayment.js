@@ -65,6 +65,5 @@ export default async function paypalCreateAuthorizedPayment(context, input) {
     status: "created",
     transactionId: paypalOrderId,
     transactions: [{ captureId }]
-    // transactions: [{ authorizationCode: authorizeResponse.result.purchase_units[0].payments.authorizations[0].id }]
   };
 }
