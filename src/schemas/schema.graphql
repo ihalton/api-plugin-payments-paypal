@@ -1,0 +1,20 @@
+"Data for an paypal payment"
+type PaypalPaymentData {
+    "PayPal Order ID"
+    paypalOrderId: String!
+}
+
+extend union PaymentData = PaypalPaymentData
+
+"Data for an paypal payment method"
+type PaypalPaymentMethodData {
+  "Paypal"
+  example: String!
+}
+
+extend union PaymentMethodData = PaypalPaymentMethodData
+
+extend enum PaymentMethodName {
+  "Paypal payment method"
+  paypal
+}
