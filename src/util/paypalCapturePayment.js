@@ -18,7 +18,9 @@ export default async function paypalCapturePayment(context, payment) {
   const request = new paypalCheckoutSdk.orders.OrdersGetRequest(paypalOrderId);
   try {
     const response = await paypalClient.client().execute(request);
-    if (response.intent === "CAPTURE" && response.status === "COMPLETED" && response.purchase_units[0].payments.captures[0].status === "COMPLETED") {
+    const responseResult = response.result;
+    // eslint-disable-next-line max-len
+    if (responseResult.intent === "CAPTURE" && responseResult.status === "COMPLETED" && responseResult.purchase_units[0].payments.captures[0].status === "COMPLETED") {
       results.saved = true;
     }
   } catch (error) {
